@@ -3,17 +3,14 @@ import { Routes, Route } from "react-router-dom";
 import axios from "axios";
 import Header from "./components/Header";
 import Home from "./components/Home";
-import Icons from "./components/Icons";
-import FeaturedSection from "./components/FeaturedSection";
+import About from "./components/About";
 import NewsLetter from "./components/NewsLetter";
-import Arrivals from "./components/Arrivals";
-import Deals from "./components/Deals";
 import Review from "./components/Reviews";
-import Blogs from "./components/Blogs";
+import Projects from "./components/Projects";
 import Footer from "./components/Footer";
-import Genre from "./components/Genre";
-import AddToCart from "./components/AddToCart";
-import { CartProvider } from "./components/CartContext ";
+import Services from "./components/Services";
+
+// import { CartProvider } from "./components/CartContext ";
 
 function App() {
   const [booksData, setBooksData] = useState([]);
@@ -45,22 +42,21 @@ function App() {
           element={
             <>
               <Home />
-              <Icons />
-              <FeaturedSection />
+              <About />
+              <Services />
               <NewsLetter />
-              <Arrivals />
-              <Deals />
               <Review />
-              <Blogs />
+              <Projects />
               <Footer />
             </>
           }
         />
-        <Route path="/FeaturedSection" element={<FeaturedSection />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Services" element={<Services />} />
+        <Route path="/Reviews" element={<Review />} />
         
-        {/* Pass booksData and searchQuery to Genre */}
-        <Route path="/Genre" element={<Genre booksData={booksData} searchQuery={searchQuery} />} />
-        <Route path="/AddToCart" element={<AddToCart />} />
+
+
       </Routes>
    
     </div>

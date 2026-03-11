@@ -1,60 +1,52 @@
-import React from "react";
-import productHome from "../Database/homeProductsData";
-import { Pagination, Autoplay, Navigation } from 'swiper/modules'; // Import required Swiper modules
-import { Swiper, SwiperSlide } from 'swiper/react'; // Import Swiper React components
+import React, { useState, useEffect } from "react";
+import homeBackgroundSlides from "../Database/homeBackgroundSlides";
 
 const Home = () => {
-    return (
-        <>
-            <section className="home" id="home">
-                <div className="row">
-                    <div className="content">
-                        <h3>upto 75% off</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Obcaecati quam dolorum, quaerat, dolores et iure sunt porro odit id a blanditiis repellat placeat quia voluptatum ducimus cum nobis magnam minus.</p>
-                        <a href="Product.html" className="btn">shop now</a>
-                    </div>
 
-                    <div className="swiper books-slider">
-                    <Swiper
-                            modules={[Autoplay, Navigation, Pagination]} // Include the Autoplay module
-                            spaceBetween={5}
-                            slidesPerView={3}
-                            centeredSlides={true}
-                            loop={true}
-                            autoplay={{
-                                delay: 3000, // 3 seconds delay between slides
-                                disableOnInteraction: false, // Continue autoplay after user interactions
-                            }}
-                            navigation={false}
-                            
-                            // pagination={{ clickable: true }}
-                            breakpoints={{
-                                0: {
-                                  slidesPerView: 1,
-                                },
-                               
-                                768: {
-                                  slidesPerView: 2,
-                                },
-                                1024: {
-                                  slidesPerView: 3,
-                                },
-                              }}
-                        >
-                            {productHome.map((image, index) => (
-                                <SwiperSlide key={index}>
-                                    <a href="#">
-                                        <img src={image.image} alt={image.name} />
-                                    </a>
-                                </SwiperSlide>
-                            ))}
-                        </Swiper>
-                        <img src="/images/bookimages/BookShelf.jpg" className="stand" alt="stand" />
-                    </div>
-                </div>
-            </section>
-        </>
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const totalSlides = homeBackgroundSlides.length;
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentIndex((prev) => (prev + 1) % totalSlides);
+        }, 5000);
+
+        return () => clearInterval(interval);
+    }, [totalSlides]);
+
+    const goNext = () => {
+        setCurrentIndex((prev) => (prev + 1) % totalSlides);
+    };
+
+    const goPrev = () => {
+        setCurrentIndex((prev) => (prev - 1 + totalSlides) % totalSlides);
+    };
+
+    return (
+        <section className="home" id="home">
+
+            {/* Render all slides */}
+            {homeBackgroundSlides.map((slide, index) => (
+                <div
+                    key={slide.id}
+                    className={`home-bg ${index === currentIndex ? "active" : ""}`}
+                    style={{ backgroundImage: `url(${slide.image})` }}
+                ></div>
+            ))}
+
+            <button className="home-nav-btn home-nav-btn--prev" onClick={goPrev}>
+                <span></span><span></span>
+            </button>
+
+            <div className="home-overlay">
+                <h2 className="home-overlay-text" dangerouslySetInnerHTML={{ __html: homeBackgroundSlides[currentIndex].text }}></h2>
+            </div>
+
+            <button className="home-nav-btn home-nav-btn--next" onClick={goNext}>
+                <span></span><span></span>
+            </button>
+
+        </section>
     );
 };
 

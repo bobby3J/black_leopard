@@ -1,5 +1,5 @@
-// blogsData.js
-export const blogs = [
+// projectsData.js
+export const projects = [
     {
         id: 1,
         image: "images/blog-1.jpg",

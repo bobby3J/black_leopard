@@ -5,7 +5,7 @@
 :root{
     --green: #27ae60;
     --dark-color: #219150;
-    --blacak: #444;
+    --black: #444;
     --light-color: #666;
     --border: .1rem solid rgba(0,0,0,.1);
     --border-hover: .1rem solid var(--black);
@@ -1511,6 +1511,22 @@ section{
 
 .footer .box-container .box .map{
     width: 100%;
+}
+
+.footer .box ul {
+    list-style: none;
+}
+
+.footer .box li {
+    font-size: 1.4rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+
+.footer .box li::before {
+    content: '*';
+    color: var(--green);
+    padding-right: .5rem;
 }
 
 .footer .share{

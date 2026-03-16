@@ -127,12 +127,12 @@ const Header = () => {
           <div className="ad-header__topbar-inner">
             <div className="ad-topbar__location">
               <FontAwesomeIcon icon={faLocationDot} aria-hidden="true" />
-              <span>Lagos, Nigeria</span>
+              <span> Koforidua Adweso Mile 50, Eastern Region, Ghana</span>
             </div>
 
             <div className="ad-topbar__contact">
               <FontAwesomeIcon icon={faPhone} aria-hidden="true" />
-              <span>Contact: +234 800 000 0000</span>
+              <span> +233 509 957 073</span>
             </div>
           </div>
         </div>
@@ -160,20 +160,20 @@ const Header = () => {
               ))}
             </div>
 
-            <div className="ad-nav__mobile-actions">
+            {/* <div className="ad-nav__mobile-actions">
               <button type="button" className="ad-portal-link" onClick={handleUserIconClick}>
                 Customer Portal
                 <FontAwesomeIcon icon={faCircleUser} aria-hidden="true" />
               </button>
-            </div>
+            </div> */}
           </nav>
 
-          <div className="ad-header__actions">
+          {/* <div className="ad-header__actions">
             <button type="button" className="ad-portal-link" onClick={handleUserIconClick}>
               Customer Portal
               <FontAwesomeIcon icon={faCircleUser} aria-hidden="true" />
             </button>
-          </div>
+          </div> */}
 
           <button
             type="button"
@@ -214,20 +214,20 @@ const Header = () => {
               ))}
             </div>
 
-            <div className="sticky-nav__mobile-actions">
+            {/* <div className="sticky-nav__mobile-actions">
               <button type="button" className="ad-portal-link" onClick={handleUserIconClick}>
                 Customer Portal
                 <FontAwesomeIcon icon={faCircleUser} aria-hidden="true" />
               </button>
-            </div>
+            </div> */}
           </nav>
 
-          <div className="sticky-nav__actions">
+          {/* <div className="sticky-nav__actions">
             <button type="button" className="ad-portal-link" onClick={handleUserIconClick}>
               Customer Portal
               <FontAwesomeIcon icon={faCircleUser} aria-hidden="true" />
             </button>
-          </div>
+          </div> */}
 
           <button
             type="button"

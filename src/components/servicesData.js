@@ -3,7 +3,7 @@ const servicesData = [
     id: 1,
     title: "Computerized Accounting",
     short: "Accounting system setup, support, and optimization for daily financial operations.",
-    image: "/images/pic-7.jpg",
+    image: "/images/fn-acc1.jpg",
     features: [
       "Accounting software deployment",
       "Data migration & cleanup",
@@ -18,7 +18,7 @@ const servicesData = [
     id: 2,
     title: "Software Development",
     short: "Custom web and business applications built around your workflow and growth goals.",
-    image: "/images/pic-8.jpg",
+    image: "/images/dev1.jpg",
     features: [
       "Web applications",
       "Process automation",
@@ -33,7 +33,7 @@ const servicesData = [
     id: 3,
     title: "Network & Security",
     short: "Secure network setup and monitoring for offices, campuses, and distributed teams.",
-    image: "/images/pic-9.jpg",
+    image: "/images/network1.webp",
     features: [
       "Network design",
       "Firewall & access control",
@@ -48,7 +48,7 @@ const servicesData = [
     id: 4,
     title: "IT Hardware Supply",
     short: "Trusted procurement and installation of quality computing and office technology.",
-    image: "/images/pic-10.jpg",
+    image: "/images/it-hardware.jpg.webp",
     features: [
       "Laptops and desktops",
       "Peripherals & accessories",
@@ -63,7 +63,7 @@ const servicesData = [
     id: 5,
     title: "CCTV & Surveillance",
     short: "Professional surveillance system design and installation for homes and organizations.",
-    image: "/images/blog-1.jpg",
+    image: "/images/cctv1.jpg",
     features: [
       "Camera planning",
       "DVR/NVR configuration",
@@ -78,7 +78,7 @@ const servicesData = [
     id: 6,
     title: "Business Technology Consulting",
     short: "Strategic advisory for digital transformation, IT upgrades, and operational efficiency.",
-    image: "/images/blog-2.jpg",
+    image: "/images/acc6.jpg",
     features: [
       "Technology audits",
       "Roadmap planning",

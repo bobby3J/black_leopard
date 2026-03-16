@@ -7,7 +7,9 @@ import { Swiper, SwiperSlide } from 'swiper/react'; // Import Swiper React compo
 const Review = () => {
     return (
         <section className="reviews" id="reviews">
-            <h1 className="heading"><span>Client's Reviews</span></h1>
+            <div className="reviews-header">
+                <h2 className="section-title"><span>Client's Reviews</span></h2>
+            </div>
             
             {/* Swiper component */}
             <Swiper

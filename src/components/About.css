@@ -34,6 +34,12 @@
   border-radius: 0.25rem;
 }
 
+/* ensure centered underlines respect .section-center */
+.section-center.section-title::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .section-title-left::after {
   left: 0;
   transform: none;
@@ -69,8 +75,18 @@
   margin-bottom: 5rem;
 }
 
-.section-center {
+/* centered header wrapper used across about pages */
+.section-header {
   text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-center {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
 }
 
 .vision-mission-container {

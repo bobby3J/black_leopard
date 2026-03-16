@@ -11,39 +11,32 @@ const Footer = () => {
 
    <div class="box">
         <h3>our locations</h3>
-    <a href="#"> <i class="fas fa-map-marker-alt"></i> Ghana </a>
-    <a href="#"> <i class="fas fa-map-marker-alt"></i> USA </a>
-    <a href="#"> <i class="fas fa-map-marker-alt"></i> russia </a>
-    <a href="#"> <i class="fas fa-map-marker-alt"></i> france </a>
-    <a href="#"> <i class="fas fa-map-marker-alt"></i> japan </a>
-    <a href="#"> <i class="fas fa-map-marker-alt"></i> south-korea </a>
+    <a href="#"> <i class="fas fa-map-marker-alt"></i> Eastern Region - Koforidua</a>
+    <a href="#"> <i class="fas fa-map-marker-alt"></i> Greater Accra - Accra</a>
    </div>
 
 <div class="box">
         <h3>quick links</h3>
     <a href="#"> <i class="fas fa-arrow-right"></i> home </a>
-    <a href="#"> <i class="fas fa-arrow-right"></i> featured </a>
-    <a href="#"> <i class="fas fa-arrow-right"></i> arrivals </a>
-    <a href="#"> <i class="fas fa-arrow-right"></i> reviews </a>
-    <a href="#"> <i class="fas fa-arrow-right"></i> blogs </a>
-    <a href="#"> <i class="fas fa-arrow-right"></i> categories </a>
+    <a href="#about"> <i class="fas fa-arrow-right"></i> about </a>
+    <a href="#services"> <i class="fas fa-arrow-right"></i> services </a>
+    <a href="#projects"> <i class="fas fa-arrow-right"></i> projects </a>
+
   
    </div>
 
    <div class="box">
     <h3>extra links</h3>
 <a href="#"> <i class="fas fa-arrow-right"></i> account info </a>
-<a href="#"> <i class="fas fa-arrow-right"></i> ordered items </a>
 <a href="#"> <i class="fas fa-arrow-right"></i> privacy policy </a>
 <a href="#"> <i class="fas fa-arrow-right"></i> payment method </a>
-<a href="#"> <i class="fas fa-arrow-right"></i> our services </a>
 </div>
 
    <div class="box">
     <h3>contact</h3>
-<a href="#"> <i class="fas fa-phone"></i> 055 108 3345 </a>
-<a href="#"> <i class="fas fa-phone"></i> 024 101 4543 </a>
-<a href="#"> <i class="fas fa-phone"></i> davidxaryee@gmail.com </a>
+<a href="#"> <i class="fas fa-phone"></i> +233 509 957 073 </a>
+<a href="#"> <i class="fas fa-envelope"></i> support@blackleopardtech.com 
+ </a>
 <img src="images/worldmap.jpg" class="map" alt="rti"/>
 </div>
 

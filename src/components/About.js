@@ -40,7 +40,10 @@ const About = () => {
       <div className="about-overview">
         <div className="about-text">
           <h2 className="section-title section-title-left">Who We Are</h2>
+
+          <br /> <br/>
           <p className="highlight-text">
+
             Black Leopard Technologies is a registered Ghanaian technology solutions provider headquartered in Koforidua.
           </p>
           <p>
@@ -57,7 +60,9 @@ const About = () => {
       </div>
 
       <div className="vision-mission-section">
-        <h2 className="section-title section-center">Our Vision & Mission</h2>
+        <div className="section-header">
+          <h2 className="section-title">Our Vision & Mission</h2>
+        </div>
         <div className="vision-mission-container">
           <article className="vision-card">
             <h3>Vision Statement</h3>
@@ -75,7 +80,9 @@ const About = () => {
       </div>
 
       <div className="core-values-section">
-        <h2 className="section-title section-center">Our Core Values</h2>
+        <div className="section-header">
+          <h2 className="section-title">Our Core Values</h2>
+        </div>
         <div className="values-grid">
           {coreValues.map((value) => (
             <article key={value.title} className="value-card">

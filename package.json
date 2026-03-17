@@ -2,6 +2,9 @@
   "name": "black_leopard",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "18.x"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
@@ -11,9 +14,9 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.7.7",
     "dotenv": "^16.3.1",
-    "react": "^19.1.0",
+    "react": "^18.3.1",
     "react-cookie": "^4.1.1",
-    "react-dom": "^19.1.0",
+    "react-dom": "^18.3.1",
     "react-router-dom": "^6.23.1",
     "react-scripts": "^5.0.1",
     "reactjs-popup": "^2.0.6",
